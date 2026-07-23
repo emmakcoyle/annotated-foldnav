@@ -3755,19 +3755,16 @@ var FoldNav_default = (() => {
   const FoldNav = () => {
     return /* @__PURE__ */ u2("div", { class: "fold-nav-wrap", children: [
       /* @__PURE__ */ u2("input", { type: "checkbox", id: "fold-nav-toggle", class: "fold-nav-toggle" }),
-      /* @__PURE__ */ u2("label", { for: "fold-nav-toggle", class: "fold-nav-button", "aria-label": "Menu", children: /* @__PURE__ */ u2("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round", children: [
-        /* @__PURE__ */ u2("line", { x1: "4", y1: "7", x2: "20", y2: "7" }),
-        /* @__PURE__ */ u2("line", { x1: "4", y1: "12", x2: "20", y2: "12" }),
-        /* @__PURE__ */ u2("line", { x1: "4", y1: "17", x2: "20", y2: "17" })
-      ] }) }),
+      /* @__PURE__ */ u2("label", { for: "fold-nav-toggle", class: "fold-nav-button", "aria-label": "Menu", children: /* @__PURE__ */ u2("span", { class: "fold-nav-z", children: "z" }) }),
       /* @__PURE__ */ u2("nav", { class: "fold-nav-panel", children: [
-        /* @__PURE__ */ u2("a", { href: "./", children: "Home" }),
-        /* @__PURE__ */ u2("a", { href: "./sources", children: "Sources" }),
-        /* @__PURE__ */ u2("a", { href: "./ideas", children: "Ideas" }),
-        /* @__PURE__ */ u2("a", { href: "./publications", children: "Publications" }),
-        /* @__PURE__ */ u2("a", { href: "./bibliography", children: "Bibliography" }),
-        /* @__PURE__ */ u2("a", { href: "./map", children: "Map" }),
-        /* @__PURE__ */ u2("a", { href: "./about", children: "About" })
+        /* @__PURE__ */ u2("img", { src: "./static/fold-nav-banana.png", class: "fold-nav-banana", alt: "" }),
+        /* @__PURE__ */ u2("a", { href: "./", class: "fold-nav-link fold-nav-link-1", children: "Home" }),
+        /* @__PURE__ */ u2("a", { href: "./sources", class: "fold-nav-link fold-nav-link-2", children: "Sources" }),
+        /* @__PURE__ */ u2("a", { href: "./ideas", class: "fold-nav-link fold-nav-link-3", children: "Ideas" }),
+        /* @__PURE__ */ u2("a", { href: "./publications", class: "fold-nav-link fold-nav-link-4", children: "Publications" }),
+        /* @__PURE__ */ u2("a", { href: "./bibliography", class: "fold-nav-link fold-nav-link-5", children: "Bibliography" }),
+        /* @__PURE__ */ u2("a", { href: "./map", class: "fold-nav-link fold-nav-link-6", children: "Map" }),
+        /* @__PURE__ */ u2("a", { href: "./about", class: "fold-nav-link fold-nav-link-7", children: "About" })
       ] })
     ] });
   };
