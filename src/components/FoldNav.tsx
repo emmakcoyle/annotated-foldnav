@@ -6,20 +6,17 @@ export default (() => {
       <div class="fold-nav-wrap">
         <input type="checkbox" id="fold-nav-toggle" class="fold-nav-toggle" />
         <label for="fold-nav-toggle" class="fold-nav-button" aria-label="Menu">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <line x1="4" y1="7" x2="20" y2="7"></line>
-            <line x1="4" y1="12" x2="20" y2="12"></line>
-            <line x1="4" y1="17" x2="20" y2="17"></line>
-          </svg>
+          <span class="fold-nav-z">z</span>
         </label>
         <nav class="fold-nav-panel">
-          <a href="./">Home</a>
-          <a href="./sources">Sources</a>
-          <a href="./ideas">Ideas</a>
-          <a href="./publications">Publications</a>
-          <a href="./bibliography">Bibliography</a>
-          <a href="./map">Map</a>
-          <a href="./about">About</a>
+          <img src="./static/fold-nav-banana.png" class="fold-nav-banana" alt="" />
+          <a href="./" class="fold-nav-link fold-nav-link-1">Home</a>
+          <a href="./sources" class="fold-nav-link fold-nav-link-2">Sources</a>
+          <a href="./ideas" class="fold-nav-link fold-nav-link-3">Ideas</a>
+          <a href="./publications" class="fold-nav-link fold-nav-link-4">Publications</a>
+          <a href="./bibliography" class="fold-nav-link fold-nav-link-5">Bibliography</a>
+          <a href="./map" class="fold-nav-link fold-nav-link-6">Map</a>
+          <a href="./about" class="fold-nav-link fold-nav-link-7">About</a>
         </nav>
       </div>
     )
