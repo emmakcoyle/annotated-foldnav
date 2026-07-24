@@ -3752,19 +3752,22 @@ function u2(e2, t2, n2, o2, i2, u3) {
 
 // src/components/FoldNav.tsx
 var FoldNav_default = (() => {
-  const FoldNav = () => {
+  const FoldNav = ({ fileData }) => {
+    const slug2 = fileData.slug ?? "";
+    const depth = slug2.split("/").length - 1;
+    const prefix = depth > 0 ? "../".repeat(depth) : "./";
     return /* @__PURE__ */ u2("div", { class: "fold-nav-wrap", children: [
       /* @__PURE__ */ u2("input", { type: "checkbox", id: "fold-nav-toggle", class: "fold-nav-toggle" }),
       /* @__PURE__ */ u2("label", { for: "fold-nav-toggle", class: "fold-nav-button", "aria-label": "Menu", children: /* @__PURE__ */ u2("span", { class: "fold-nav-z", children: "z" }) }),
       /* @__PURE__ */ u2("nav", { class: "fold-nav-panel", children: [
-        /* @__PURE__ */ u2("img", { src: "./static/fold-nav-banana.png", class: "fold-nav-banana", alt: "" }),
-        /* @__PURE__ */ u2("a", { href: "./", class: "fold-nav-link fold-nav-link-1", children: "Home" }),
-        /* @__PURE__ */ u2("a", { href: "./sources", class: "fold-nav-link fold-nav-link-2", children: "Sources" }),
-        /* @__PURE__ */ u2("a", { href: "./ideas", class: "fold-nav-link fold-nav-link-3", children: "Ideas" }),
-        /* @__PURE__ */ u2("a", { href: "./publications", class: "fold-nav-link fold-nav-link-4", children: "Publications" }),
-        /* @__PURE__ */ u2("a", { href: "./bibliography", class: "fold-nav-link fold-nav-link-5", children: "Bibliography" }),
-        /* @__PURE__ */ u2("a", { href: "./map", class: "fold-nav-link fold-nav-link-6", children: "Map" }),
-        /* @__PURE__ */ u2("a", { href: "./about", class: "fold-nav-link fold-nav-link-7", children: "About" })
+        /* @__PURE__ */ u2("img", { src: `${prefix}static/fold-nav-banana.png`, class: "fold-nav-banana", alt: "" }),
+        /* @__PURE__ */ u2("a", { href: prefix, class: "fold-nav-link fold-nav-link-1", children: "Home" }),
+        /* @__PURE__ */ u2("a", { href: `${prefix}sources`, class: "fold-nav-link fold-nav-link-2", children: "Sources" }),
+        /* @__PURE__ */ u2("a", { href: `${prefix}ideas`, class: "fold-nav-link fold-nav-link-3", children: "Ideas" }),
+        /* @__PURE__ */ u2("a", { href: `${prefix}publications`, class: "fold-nav-link fold-nav-link-4", children: "Publications" }),
+        /* @__PURE__ */ u2("a", { href: `${prefix}bibliography`, class: "fold-nav-link fold-nav-link-5", children: "Bibliography" }),
+        /* @__PURE__ */ u2("a", { href: `${prefix}map`, class: "fold-nav-link fold-nav-link-6", children: "Map" }),
+        /* @__PURE__ */ u2("a", { href: `${prefix}about`, class: "fold-nav-link fold-nav-link-7", children: "About" })
       ] })
     ] });
   };
